@@ -23,7 +23,7 @@ export default function Navbar() {
 
                 {/* لوگو */}
                 <Link href="/" className="font-bold text-lg tracking-tight bg-linear-to-r from-cyan-500 to-blue-600 bg-clip-text text-transparent">
-                    Portfolio.dev
+                    رزومه کاری من
                 </Link>
 
                 {/* منوی دسکتاپ (بدون آیکون، مینیمال و همراه با استایل اکتیو) */}
