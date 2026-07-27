@@ -1,6 +1,21 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* مخفی کردن اسکرول‌بار در مرورگرهای کروم، سافاری و اپرا */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* مخفی کردن اسکرول‌بار در فایرفاکس و اینترنت اکسپلورر */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+@theme {
+  --font-sans: var(--font-vazirmatn), system-ui, -apple-system, sans-serif;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -25,3 +40,4 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+

@@ -34,7 +34,7 @@ export default function ContactPage() {
     };
 
     return (
-        <main className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 selection:bg-cyan-500 selection:text-slate-950 transition-colors">
+        <main className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 selection:bg-cyan-500 selection:text-slate-950 transition-colors no-scrollbar">
             <Navbar />
             <div className="max-w-5xl mx-auto px-6 py-20">
                 <motion.div

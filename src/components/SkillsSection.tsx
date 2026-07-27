@@ -17,7 +17,7 @@ const skillsList = [
 export default function SkillsSection() {
     return (
         <section className="py-24 px-6 relative overflow-hidden bg-slate-50 dark:bg-slate-900/40 transition-colors">
-            <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center ">
 
                 {/* ستون راست: متن توضیحات، عنوان و دکمه Learn More (در راست‌چین سمت راست قرار می‌گیرد) */}
                 <motion.div
