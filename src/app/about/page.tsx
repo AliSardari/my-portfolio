@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
-import { Server, Layout, Cpu, CheckCircle2 } from "lucide-react";
+import { Server, Layout, Cpu, CheckCircle2, ExternalLink, Award } from "lucide-react";
 import SkillsSection from "@/components/SkillsSection";
 
 export default function AboutPage() {
@@ -44,6 +44,27 @@ export default function AboutPage() {
                         من یک توسعه‌ دهنده وب فول‌ استک هستم که با اشتیاق فراوان به دنیای برنامه‌ نویسی، راهکارهای نرم‌ افزاری مقیاس‌ پذیر و مدرن خلق می‌کنم. تسلط بر تکنولوژی‌ های فرانت اند  مانند React و Next.js در کنار قدرت بک اند با Laravel و Python به من اجازه می‌ دهد پروژه‌ ها را از صفر تا صد به بهترین شکل پیاده‌ سازی کنم.
                     </p>
                 </motion.div>
+                <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
+                    <div className="flex items-center gap-4 text-right">
+                        <div className="p-3 rounded-xl bg-cyan-500/10 text-cyan-600 dark:text-cyan-400">
+                            {/* اینجا می‌توانی از آیکون Award استفاده کنی */}
+                            <Award className="w-8 h-8" />
+                        </div>
+                        <div>
+                            <h3 className="text-base font-bold text-slate-900 dark:text-slate-100">مدارک و گواهینامه‌های تخصصی</h3>
+                            <p className="text-slate-500 dark:text-slate-400 text-xs mt-1">مشاهده بیش از ۳۰ مدرک رسمی اخذ شده از دوره‌های تخصصی فرادرس</p>
+                        </div>
+                    </div>
+                    <a
+                        href="https://faradars.org/my-account/certificates"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold text-xs transition-all shadow-md shadow-cyan-500/20 shrink-0"
+                    >
+                        <span>مشاهده مدارک در فرادرس</span>
+                        <ExternalLink className="w-4 h-4" />
+                    </a>
+                </div>
 
                 {/* 3 دسته‌بندی مهارت‌ها */}
                 <motion.div

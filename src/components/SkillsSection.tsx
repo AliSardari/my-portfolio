@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Award, ExternalLink } from "lucide-react";
 
 
 // لیست مهارت‌ها همراه با درصد و رنگ آیکون/نوار پیشرفت
@@ -27,12 +28,12 @@ export default function SkillsSection() {
                     className="lg:col-span-5 space-y-6 text-right"
                 >
                     <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-600 dark:text-cyan-400 text-xs font-medium">
-                        مهارت‌ های تخصصی 
+                        مهارت‌ های تخصصی
                     </div>
 
                     <div className="space-y-2">
                         <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100">
-                            مهارت‌ های محبوب و سوابق من 
+                            مهارت‌ های محبوب و سوابق من
                         </h2>
                     </div>
 
