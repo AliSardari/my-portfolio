@@ -72,7 +72,7 @@ export default function Hero() {
                         <div className="relative w-full h-full rounded-3xl overflow-hidden border-2 border-cyan-500/30 dark:border-cyan-500/20 shadow-2xl bg-slate-200 dark:bg-slate-900 p-2">
                             <div className="relative w-full h-full rounded-2xl overflow-hidden">
                                 <Image
-                                    src="/avatar/avatar.jpg"
+                                    src="/avatar/my-avatar.jpg"
                                     alt="توسعه‌دهنده وب"
                                     fill
                                     className="object-cover"
