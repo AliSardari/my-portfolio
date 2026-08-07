@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+
 
 // لیست مهارت‌ها همراه با درصد و رنگ آیکون/نوار پیشرفت
 const skillsList = [
@@ -28,17 +27,17 @@ export default function SkillsSection() {
                     className="lg:col-span-5 space-y-6 text-right"
                 >
                     <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-600 dark:text-cyan-400 text-xs font-medium">
-                        مهارت‌های تخصصی
+                        مهارت‌ های تخصصی 
                     </div>
 
                     <div className="space-y-2">
                         <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100">
-                            مهارت‌های محبوب و سوابق من
+                            مهارت‌ های محبوب و سوابق من 
                         </h2>
                     </div>
 
                     <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
-                        با بهره‌گیری از ابزارها و تکنولوژی‌های روز دنیا، تلاش می‌کنم کدهایی تمیز، مقیاس‌پذیر و با بالاترین کیفیت ممکن برای پروژه‌های وب خلق کنم.
+                        با بهره‌ گیری از ابزارها و تکنولوژی‌ های روز دنیا، تلاش می‌کنم کدهایی تمیز، مقیاس‌ پذیر و با بالاترین کیفیت ممکن برای پروژه‌های وب خلق کنم.
                     </p>
 
                     {/* <div className="pt-2">
@@ -68,7 +67,7 @@ export default function SkillsSection() {
                             >
                                 <div className="flex items-center justify-between mb-3">
                                     <div className="flex items-center gap-3">
-                                        <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500/10 to-blue-500/10 border border-cyan-500/20 flex items-center justify-center text-lg group-hover:scale-110 transition-transform">
+                                        <div className="w-10 h-10 rounded-xl bg-linear-to-tr from-cyan-500/10 to-blue-500/10 border border-cyan-500/20 flex items-center justify-center text-lg group-hover:scale-110 transition-transform">
                                             {skill.icon}
                                         </div>
                                         <span className="font-bold text-sm text-slate-800 dark:text-slate-200">{skill.name}</span>
@@ -83,7 +82,7 @@ export default function SkillsSection() {
                                         whileInView={{ width: `${skill.level}%` }}
                                         viewport={{ once: true }}
                                         transition={{ duration: 1, delay: index * 0.15, ease: "easeOut" }}
-                                        className={`h-full rounded-full bg-gradient-to-r ${skill.color}`}
+                                        className={`h-full rounded-full bg-linear-to-r ${skill.color}`}
                                     />
                                 </div>
                             </div>

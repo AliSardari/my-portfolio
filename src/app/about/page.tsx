@@ -10,7 +10,7 @@ export default function AboutPage() {
         {
             title: "فرانت‌اند (Frontend)",
             icon: <Layout className="w-6 h-6 text-cyan-500 dark:text-cyan-400" />,
-            skills: ["React", "Next.js", "Tailwind CSS", "Bootstrap", "JavaScript", "HTML5", "CSS3"],
+            skills: ["React", "Next.js", "Tailwind CSS", "Bootstrap", "JavaScript", "TypeScript", "HTML5", "CSS3"],
         },
         {
             title: "بک‌اند (Backend)",
@@ -41,7 +41,7 @@ export default function AboutPage() {
                     </div>
                     <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-6">درباره من</h1>
                     <p className="text-slate-600 dark:text-slate-400 text-base md:text-lg leading-relaxed">
-                        من یک توسعه‌دهنده وب فول‌استک هستم که با اشتیاق فراوان به دنیای برنامه‌نویسی، راهکارهای نرم‌افزاری مقیاس‌پذیر و مدرن خلق می‌کنم. تسلط بر تکنولوژی‌های فرانت‌اند مانند React و Next.js در کنار قدرت بک‌اند با Laravel و Python به من اجازه می‌دهد پروژه‌ها را از صفر تا صد به بهترین شکل پیاده‌سازی کنم.
+                        من یک توسعه‌ دهنده وب فول‌ استک هستم که با اشتیاق فراوان به دنیای برنامه‌ نویسی، راهکارهای نرم‌ افزاری مقیاس‌ پذیر و مدرن خلق می‌کنم. تسلط بر تکنولوژی‌ های فرانت اند  مانند React و Next.js در کنار قدرت بک اند با Laravel و Python به من اجازه می‌ دهد پروژه‌ ها را از صفر تا صد به بهترین شکل پیاده‌ سازی کنم.
                     </p>
                 </motion.div>
 
@@ -52,7 +52,7 @@ export default function AboutPage() {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="space-y-8"
                 >
-                    <h2 className="text-2xl font-bold tracking-tight">مهارت‌ها و تخصص‌ها</h2>
+                    <h2 className="text-2xl font-bold tracking-tight">مهارت‌ ها و تخصص‌ ها</h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {skillCategories.map((category, index) => (

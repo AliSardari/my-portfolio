@@ -66,21 +66,25 @@ export default function ContactPage() {
                                     <div className="p-3 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-600 dark:text-cyan-400">
                                         <Mail className="w-5 h-5" />
                                     </div>
-                                    <span>your.email@example.com</span>
+                                    <span>alisardari66@gmail.com</span>
                                 </div>
 
                                 <div className="flex items-center gap-3">
                                     <div className="p-3 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-600 dark:text-cyan-400">
                                         <Globe className="w-5 h-5" />
                                     </div>
-                                    <a href="#" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">linkedin.com/in/yourprofile</a>
+                                    <a href="https://www.linkedin.com/in/ali-s-a230b4172/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                                        https://www.linkedin.com/in/ali-s-a230b4172/
+                                    </a>
                                 </div>
 
                                 <div className="flex items-center gap-3">
                                     <div className="p-3 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-600 dark:text-cyan-400">
                                         <Code className="w-5 h-5" />
                                     </div>
-                                    <a href="#" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">github.com/yourusername</a>
+                                    <a href="https://github.com/AliSardari" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                                        https://github.com/AliSardari
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -102,7 +106,7 @@ export default function ContactPage() {
                                 required
                                 value={formData.name}
                                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                                placeholder="مثال: علی احمدی"
+                                placeholder="مثال: علی سرداری"
                                 className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-800 dark:text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors"
                             />
                         </div>
