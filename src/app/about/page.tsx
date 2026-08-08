@@ -1,8 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
-import { Server, Layout, Cpu, CheckCircle2, ExternalLink, Award } from "lucide-react";
+import { Server, Layout, Cpu, CheckCircle2, Award, ArrowLeft } from "lucide-react";
 import SkillsSection from "@/components/SkillsSection";
 
 export default function AboutPage() {
@@ -47,23 +48,21 @@ export default function AboutPage() {
                 <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
                     <div className="flex items-center gap-4 text-right">
                         <div className="p-3 rounded-xl bg-cyan-500/10 text-cyan-600 dark:text-cyan-400">
-                            {/* اینجا می‌توانی از آیکون Award استفاده کنی */}
                             <Award className="w-8 h-8" />
                         </div>
                         <div>
                             <h3 className="text-base font-bold text-slate-900 dark:text-slate-100">مدارک و گواهینامه‌های تخصصی</h3>
-                            <p className="text-slate-500 dark:text-slate-400 text-xs mt-1">مشاهده بیش از ۳۰ مدرک رسمی اخذ شده از دوره‌های تخصصی فرادرس</p>
+                            <p className="text-slate-500 dark:text-slate-400 text-xs mt-1">مشاهده بیش از ۳۰ مدرک رسمی اخذ شده از دوره‌های تخصصی مختلف</p>
                         </div>
                     </div>
-                    <a
-                        href="https://faradars.org/my-account/certificates"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold text-xs transition-all shadow-md shadow-cyan-500/20 shrink-0"
+
+                    <Link
+                        href="/certificates"
+                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold text-xs transition-all shadow-md shadow-cyan-500/20 shrink-0 group"
                     >
-                        <span>مشاهده مدارک در فرادرس</span>
-                        <ExternalLink className="w-4 h-4" />
-                    </a>
+                        <span>مشاهده مدارک</span>
+                        <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+                    </Link>
                 </div>
 
                 {/* 3 دسته‌بندی مهارت‌ها */}
