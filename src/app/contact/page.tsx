@@ -44,10 +44,10 @@ export default function ContactPage() {
                     className="text-center mb-12"
                 >
                     <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-600 dark:text-cyan-400 text-xs font-medium mb-4">
-                        راه‌های ارتباطی
+                        راه‌ های ارتباطی
                     </div>
                     <h1 className="text-3xl font-bold tracking-tight mb-3">ارتباط با من</h1>
-                    <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base">خوشحال می‌شوم پروژه‌های جدید یا فرصت‌های همکاری را با هم بررسی کنیم.</p>
+                    <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base">خوشحال می‌ شوم پروژه‌ های جدید یا فرصت‌ های همکاری را با هم بررسی کنیم.</p>
                 </motion.div>
 
                 <motion.div

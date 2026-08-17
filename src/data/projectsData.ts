@@ -61,6 +61,7 @@ export const projectsDetailData: Record<string, ProjectDetail> = {
             "Livewire 2",
             "Laravel Jetstream",
             "MySQL",
+            "Bootstrap",
             "Pay.ir",
             "SEOTools",
         ],

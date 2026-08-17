@@ -32,10 +32,10 @@ export default function ProjectsPage() {
                         نمونه کارهای من
                     </div>
                     <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
-                        آخرین پروژه‌ها و دستاوردهای فنی
+                        آخرین پروژه ‌ها و دستاوردهای فنی
                     </h1>
                     <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base">
-                        مجموعه‌ای از پروژه‌های توسعه داده شده با تکنولوژی‌های مدرن وب، فرانت‌اند و بک‌اند.
+                        مجموعه‌ ای از پروژه‌ های توسعه داده شده با تکنولوژی‌ های مدرن وب، فرانت‌ اند و بک‌ اند.
                     </p>
                 </motion.div>
 

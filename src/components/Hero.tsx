@@ -25,22 +25,22 @@ export default function Hero() {
                         آماده برای همکاری‌های جدید
                     </div>
 
-                    <div className="space-y-2 text-green-500 font-semibold">
-                        سلام من یک <span className="text-cyan-600 dark:text-cyan-400">توسعه‌دهنده وب</span> هستم
-                        <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100">
-                            برنامه نویس <span className="bg-linear-to-r from-cyan-500 to-blue-600 bg-clip-text text-transparent">Full-Stack</span> فعالیت می کنم
+                    <div className="space-y-2 py-1 text-green-500 font-semibold">
+                        سلام من یک <span className="text-cyan-600 dark:text-cyan-400 text-xl">توسعه‌ دهنده وب</span> هستم
+                        <h1 className="text-4xl sm:text-5xl py-2 font-extrabold tracking-tight text-slate-900 dark:text-slate-100">
+                            و برنامه نویس <span className="bg-linear-to-r from-cyan-500 to-blue-600 bg-clip-text text-transparent">Full-Stack</span> فعالیت می کنم
                         </h1>
                     </div>
 
                     <p className="text-slate-600 dark:text-slate-400 text-base sm:text-lg leading-relaxed">
-                        توسعه‌ دهنده‌ای که پشت‌ صحنه کسب‌وکارها را با سیستم‌های اتوماسیون و داشبوردهای هوشمند مدیریت می‌کند.
+                        توسعه‌ دهنده‌ ای که پشت‌ صحنه کسب‌ و کارها را با سیستم‌ های اتوماسیون و داشبوردهای هوشمند مدیریت می‌ کند.
 
-                        با ترکیب PHP/Laravel برای بخش‌ های پایدار و پایتون برای پردازش‌ های هوشمند، سیستم‌ هایی می‌ سازم که کارهای تکراری را حذف و تصمیم‌ گیری را برای مدیران آسان می‌کنند.
+                        با ترکیب <span className="text-blue-600">PHP/Laravel</span> برای بخش‌ های پایدار و پایتون برای پردازش‌ های هوشمند، سیستم‌ هایی می‌ سازم که کارهای تکراری را حذف و تصمیم‌ گیری را برای مدیران آسان می‌کنند.
 
                         نمونه‌ هایی از کارهایی که انجام داده‌ ام:
-                        - طراحی داشبوردهای مدیریتی با React، Next.js و Tailwind
-                        - ساخت بات‌های هوشمند برای خودکارسازی تعاملات مشتریان
-                        - پیاده‌سازی سیستم‌های اتوماسیون سفارشی برای کاهش زمان پردازش
+                        <p className="text-green-600">- طراحی داشبوردهای مدیریتی با React, Next.js و Tailwind</p>
+                        <p className="text-green-600">- ساخت بات‌ های هوشمند برای خودکارسازی تعاملات مشتریان</p>
+                        <p className="text-green-600">- پیاده‌ سازی سیستم‌ های اتوماسیون سفارشی برای کاهش زمان پردازش</p>
 
                         اگر به دنبال سیستمی هستید که وقت شما را آزاد کند و اطلاعات را در قالبی زیبا و کاربردی به شما نشان دهد، با من تماس بگیرید.
                     </p>

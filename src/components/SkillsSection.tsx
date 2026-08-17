@@ -1,8 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Award, ExternalLink } from "lucide-react";
-
 
 // لیست مهارت‌ها همراه با درصد و رنگ آیکون/نوار پیشرفت
 const skillsList = [
@@ -10,7 +8,7 @@ const skillsList = [
     { name: "Laravel & PHP", level: 95, color: "from-red-500 to-orange-500", icon: "🐘" },
     { name: "Python & Django", level: 75, color: "from-yellow-500 to-amber-500", icon: "🐍" },
     { name: "TypeScript & JavaScript", level: 88, color: "from-blue-400 to-indigo-500", icon: "📜" },
-    { name: "Tailwind CSS", level: 99, color: "from-teal-400 to-cyan-500", icon: "🎨" },
+    { name: "Tailwind CSS & Bootstrap", level: 98, color: "from-teal-400 to-cyan-500", icon: "🎨" },
     { name: "MySQL & Database", level: 82, color: "from-blue-600 to-cyan-700", icon: "🗄️" },
 ];
 
@@ -38,18 +36,8 @@ export default function SkillsSection() {
                     </div>
 
                     <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
-                        با بهره‌ گیری از ابزارها و تکنولوژی‌ های روز دنیا، تلاش می‌کنم کدهایی تمیز، مقیاس‌ پذیر و با بالاترین کیفیت ممکن برای پروژه‌های وب خلق کنم.
+                        با بهره‌ گیری از ابزارها و تکنولوژی‌ های روز دنیا، تلاش می‌کنم کدهایی تمیز، مقیاس‌ پذیر و با بالاترین کیفیت ممکن برای پروژه‌ های وب خلق کنم.
                     </p>
-
-                    {/* <div className="pt-2">
-                        <Link
-                            href="/about"
-                            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-900 dark:bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-slate-100 font-semibold transition-all shadow-lg group"
-                        >
-                            <span>بیشتر بدانید</span>
-                            <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-                        </Link>
-                    </div> */}
                 </motion.div>
 
                 {/* ستون چپ: مستطیل کارت مهارت‌ها با انیمیشن پر شدن درصد */}

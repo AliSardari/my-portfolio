@@ -29,7 +29,7 @@ export default function ProjectDetailPage({ params }: { params: Promise<{ id: st
                         className="inline-flex items-center gap-2 text-sm py-2 px-4 rounded-md font-medium text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors bg-indigo-600 "
                     >
                         <ArrowRight className="w-4 h-4" />
-                        <span>بازگشت به نمونه‌کارها</span>
+                        <span>بازگشت به نمونه کارها</span>
                     </Link>
                 </div>
 

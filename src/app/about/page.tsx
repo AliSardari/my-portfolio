@@ -42,7 +42,9 @@ export default function AboutPage() {
                     </div>
                     <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-6">درباره من</h1>
                     <p className="text-slate-600 dark:text-slate-400 text-base md:text-lg leading-relaxed">
-                        من یک توسعه‌ دهنده وب فول‌ استک هستم که با اشتیاق فراوان به دنیای برنامه‌ نویسی، راهکارهای نرم‌ افزاری مقیاس‌ پذیر و مدرن خلق می‌کنم. تسلط بر تکنولوژی‌ های فرانت اند  مانند React و Next.js در کنار قدرت بک اند با Laravel و Python به من اجازه می‌ دهد پروژه‌ ها را از صفر تا صد به بهترین شکل پیاده‌ سازی کنم.
+                        مسیر حرفه‌ ای من با یک تغییر مسیرِ از سرِ اشتیاق آغاز شد؛ فارغ‌ التحصیل مهندسی برق (قدرت) هستم، اما کششِ درونی‌ ام به دنیای کدنویسی مرا از سال ۱۳۹۵ به این عرصه کشاند. سال‌ های ابتدایی را با یادگیری عمیق، تجربه‌ های خودآموز (مثل ساخت اولین پلتفرم آموزشی با PHP/Laravel) و چالش‌ های فنی گذراندم تا اینکه وارد بازار کار شدم.
+                        <br className="hidden md:block my-2" />
+                        امروز به عنوان یک توسعه‌ دهنده وب فول‌استک، عاشقِ چالش‌ های پیچیده و حل مسئله هستم. برای من، دنیای فناوری یک بازیِ بی‌ انتهای یادگیری است. ترکیب تسلط بر فرانت‌ اند (React و Next.js) با قدرت بک‌ اند (Laravel و Python) به من ابزاری می‌دهد تا ایده‌ های خام را از صفر تا صد به راهکارهای نرم‌ افزاری مقیاس‌ پذیر و مدرن تبدیل کنم.
                     </p>
                 </motion.div>
                 <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
@@ -51,7 +53,7 @@ export default function AboutPage() {
                             <Award className="w-8 h-8" />
                         </div>
                         <div>
-                            <h3 className="text-base font-bold text-slate-900 dark:text-slate-100">مدارک و گواهینامه‌های تخصصی</h3>
+                            <h3 className="text-base font-bold text-slate-900 dark:text-slate-100">مدارک و گواهینامه‌ های تخصصی</h3>
                             <p className="text-slate-500 dark:text-slate-400 text-xs mt-1">مشاهده بیش از ۳۰ مدرک رسمی اخذ شده از دوره‌های تخصصی مختلف</p>
                         </div>
                     </div>
