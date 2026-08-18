@@ -32,18 +32,28 @@ export default function Hero() {
                         </h1>
                     </div>
 
-                    <p className="text-slate-600 dark:text-slate-400 text-base sm:text-lg leading-relaxed">
-                        توسعه‌ دهنده‌ ای که پشت‌ صحنه کسب‌ و کارها را با سیستم‌ های اتوماسیون و داشبوردهای هوشمند مدیریت می‌ کند.
+                    {/* اصلاح شده: تبدیل به div برای جلوگیری از خطای تداخل پاراگراف‌ها */}
+                    <div className="text-slate-600 dark:text-slate-400 text-base sm:text-lg leading-relaxed space-y-3">
+                        <p>
+                            توسعه‌ دهنده‌ ای که پشت‌ صحنه کسب‌ و کارها را با سیستم‌ های اتوماسیون و داشبوردهای هوشمند مدیریت می‌ کند.
+                        </p>
+                        <p>
+                            با ترکیب <span className="text-blue-600 font-medium">PHP/Laravel</span> برای بخش‌ های پایدار و پایتون برای پردازش‌ های هوشمند، سیستم‌ هایی می‌ سازم که کارهای تکراری را حذف و تصمیم‌ گیری را برای مدیران آسان می‌کنند.
+                        </p>
+                        
+                        <div className="pt-2">
+                            <span className="block font-medium text-slate-800 dark:text-slate-200 mb-1">نمونه‌ هایی از کارهایی که انجام داده‌ ام:</span>
+                            <div className="text-green-600 space-y-1 text-sm sm:text-base">
+                                <p>- طراحی داشبوردهای مدیریتی با React, Next.js و Tailwind</p>
+                                <p>- ساخت بات‌ های هوشمند برای خودکارسازی تعاملات مشتریان</p>
+                                <p>- پیاده‌ سازی سیستم‌ های اتوماسیون سفارشی برای کاهش زمان پردازش</p>
+                            </div>
+                        </div>
 
-                        با ترکیب <span className="text-blue-600">PHP/Laravel</span> برای بخش‌ های پایدار و پایتون برای پردازش‌ های هوشمند، سیستم‌ هایی می‌ سازم که کارهای تکراری را حذف و تصمیم‌ گیری را برای مدیران آسان می‌کنند.
-
-                        نمونه‌ هایی از کارهایی که انجام داده‌ ام:
-                        <p className="text-green-600">- طراحی داشبوردهای مدیریتی با React, Next.js و Tailwind</p>
-                        <p className="text-green-600">- ساخت بات‌ های هوشمند برای خودکارسازی تعاملات مشتریان</p>
-                        <p className="text-green-600">- پیاده‌ سازی سیستم‌ های اتوماسیون سفارشی برای کاهش زمان پردازش</p>
-
-                        اگر به دنبال سیستمی هستید که وقت شما را آزاد کند و اطلاعات را در قالبی زیبا و کاربردی به شما نشان دهد، با من تماس بگیرید.
-                    </p>
+                        <p className="pt-2">
+                            اگر به دنبال سیستمی هستید که وقت شما را آزاد کند و اطلاعات را در قالبی زیبا و کاربردی به شما نشان دهد، با من تماس بگیرید.
+                        </p>
+                    </div>
 
                     {/* دکمه‌های اقدام سریع */}
                     <div className="pt-4 flex flex-wrap items-center gap-4">
@@ -84,6 +94,7 @@ export default function Hero() {
                                     src="/avatar/my-avatar.jpg"
                                     alt="توسعه‌دهنده وب"
                                     fill
+                                    sizes="(max-width: 768px) 100vw, 500px"
                                     className="object-cover"
                                     priority
                                 />

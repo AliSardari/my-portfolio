@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Navbar from "@/components/Navbar";
 import ProjectSlider from "@/components/ProjectSlider"; 
 import { projectsDetailData as projectsData } from "@/data/projectsData";
 import { Code, ExternalLink, Layers } from "lucide-react";
@@ -17,7 +16,6 @@ export default function ProjectsPage() {
 
     return (
         <main className="min-h-screen text-slate-900 dark:text-slate-100 selection:bg-cyan-500 selection:text-slate-950 bg-slate-50 dark:bg-slate-950 transition-colors">
-            <Navbar />
             <div className="max-w-6xl mx-auto px-6 py-20">
 
                 {/* هدر صفحه نمونه کارها */}

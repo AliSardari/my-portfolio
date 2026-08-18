@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import Navbar from "@/components/Navbar";
 import CertificateCard from "@/components/CertificateCard";
 import { certificatesData } from "@/data/certificatesData";
 import { Award, X, ChevronRight, ChevronLeft } from "lucide-react";
@@ -38,7 +37,6 @@ export default function CertificatesPage() {
 
     return (
         <main className="min-h-screen text-slate-900 dark:text-slate-100 bg-slate-50 dark:bg-slate-950 transition-colors">
-            <Navbar />
 
             <div className="max-w-7xl mx-auto px-6 py-20">
                 {/* هدر صفحه */}

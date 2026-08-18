@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import Navbar from "@/components/Navbar"; // ۱. ایمپورت کردن نوبار
 import { Vazirmatn } from "next/font/google";
 
 const vazirmatn = Vazirmatn({
@@ -23,6 +24,8 @@ export default function RootLayout({
     <html lang="fa" dir="rtl" suppressHydrationWarning className="scroll-smooth">
       <body className={`${vazirmatn.variable} font-sans antialiased bg-slate-950 text-slate-100 dark:bg-slate-950 dark:text-slate-100 selection:bg-cyan-500 selection:text-slate-950`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          {/* ۲. قرار دادن نوبار به صورت سراسری */}
+          <Navbar />
           {children}
         </ThemeProvider>
       </body>
