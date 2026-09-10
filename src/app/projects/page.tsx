@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
 import ProjectSlider from "@/components/ProjectSlider"; 
 import { projectsDetailData as projectsData } from "@/data/projectsData";
@@ -8,11 +7,7 @@ import { Code, ExternalLink, Layers } from "lucide-react";
 import Link from "next/link";
 
 export default function ProjectsPage() {
-    const [filter, setFilter] = useState("All");
-
-    const filteredProjects = filter === "All"
-        ? Object.entries(projectsData)
-        : Object.entries(projectsData).filter(([_, p]) => p.category.includes(filter));
+    const filteredProjects = Object.entries(projectsData);
 
     return (
         <main className="min-h-screen text-slate-900 dark:text-slate-100 selection:bg-cyan-500 selection:text-slate-950 bg-slate-50 dark:bg-slate-950 transition-colors">

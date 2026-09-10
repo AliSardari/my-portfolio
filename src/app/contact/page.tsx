@@ -27,13 +27,13 @@ export default function ContactPage() {
             } else {
                 setStatus({ loading: false, success: false, message: data.message });
             }
-        } catch (err) {
+        } catch {
             setStatus({ loading: false, success: false, message: "خطا در ارتباط با سرور." });
         }
     };
 
     return (
-        <main className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 selection:bg-cyan-500 selection:text-slate-950 transition-colors no-scrollbar">
+        <main className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 selection:bg-cyan-500 selection:text-slate-950 transition-colors">
             <div className="max-w-5xl mx-auto px-6 py-20">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

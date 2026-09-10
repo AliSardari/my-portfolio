@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-// یک کلید موقت یا متغیر محیطی برای Resend
-const resend = new Resend(process.env.RESEND_API_KEY || "re_123456789");
+const resend = new Resend(process.env.RESEND_API_KEY);
+const TO_EMAIL = process.env.CONTACT_EMAIL || "alisardari66@gmail.com";
 
 export async function POST(request: Request) {
     try {
@@ -17,10 +17,17 @@ export async function POST(request: Request) {
             );
         }
 
-        // ارسال ایمیل واقعی به جیمیل شما
-        const data = await resend.emails.send({
+        if (!process.env.RESEND_API_KEY) {
+            return NextResponse.json(
+                { message: "فرم تماس هنوز پیکربندی نشده است." },
+                { status: 500 },
+            );
+        }
+
+        // ارسال ایمیل واقعی
+        await resend.emails.send({
             from: "Portfolio Contact <onboarding@resend.dev>",
-            to: "your.actual.email@gmail.com", // <--- جیمیل خودتان را اینجا وارد کنید
+            to: TO_EMAIL,
             subject: `پیام جدید از طرف ${name} در سایت پورتفولیو`,
             html: `
         <div dir="rtl" style="font-family: Tahoma, sans-serif; padding: 20px; line-height: 1.6;">

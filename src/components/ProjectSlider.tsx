@@ -45,6 +45,7 @@ export default function ProjectSlider({ images, title, isDetail = false }: Proje
                     src={images[currentIndex]}
                     alt={`${title} - تصویر ${currentIndex + 1}`}
                     fill
+                    sizes="(max-width: 1024px) 100vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover/slider:scale-105"
                 />
 
@@ -118,6 +119,7 @@ export default function ProjectSlider({ images, title, isDetail = false }: Proje
                                 src={images[currentIndex]}
                                 alt={`${title} - نمای بزرگ`}
                                 fill
+                                sizes="(max-width: 1024px) 100vw, 1024px"
                                 className="object-contain"
                             />
 

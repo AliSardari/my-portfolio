@@ -5,8 +5,8 @@ import Navbar from "@/components/Navbar"; // ۱. ایمپورت کردن نوب�
 import { Vazirmatn } from "next/font/google";
 
 const vazirmatn = Vazirmatn({
-  subsets: ["arabic"], // پشتیبانی از حروف فارسی و عربی
-  weight: ["300", "400", "500", "700", "800"], // وزن‌های مختلف فونت
+  subsets: ["arabic", "latin"], // پشتیبانی از فارسی و لاتین (کلمات انگلیسی)
+  weight: "variable", // استفاده از فونت variable برای تمام وزن‌ها با حجم بهینه
   variable: "--font-vazirmatn", // متغیر CSS برای استفاده در تایلوند یا استایل‌ها
 });
 
@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa" dir="rtl" suppressHydrationWarning className="scroll-smooth">
-      <body className={`${vazirmatn.variable} font-sans antialiased bg-slate-950 text-slate-100 dark:bg-slate-950 dark:text-slate-100 selection:bg-cyan-500 selection:text-slate-950`}>
+      <body className={`${vazirmatn.variable} font-sans antialiased bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100 selection:bg-cyan-500 selection:text-slate-950`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {/* ۲. قرار دادن نوبار به صورت سراسری */}
           <Navbar />

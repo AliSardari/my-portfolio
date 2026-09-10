@@ -4,7 +4,6 @@ import { use } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { motion } from "framer-motion";
-import Navbar from "@/components/Navbar";
 import ProjectSlider from "@/components/ProjectSlider";
 import { projectsDetailData } from "@/data/projectsData";
 import { ExternalLink, ArrowRight, Layers, CheckCircle2, Code } from "lucide-react";
@@ -20,7 +19,6 @@ export default function ProjectDetailPage({ params }: { params: Promise<{ id: st
 
     return (
         <main className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 selection:bg-cyan-500 selection:text-slate-950 transition-colors">
-            <Navbar />
             <div className="max-w-4xl mx-auto px-6 py-16 space-y-10">
                 {/* دکمه بازگشت به صفحه نمونه‌کارها */}
                 <div>
