@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Server, Layout, Cpu, CheckCircle2, Award, ArrowLeft } from "lucide-react";
-import SkillsSection from "@/components/SkillsSection";
 
 export default function AboutPage() {
     const skillCategories = [
@@ -101,11 +100,6 @@ export default function AboutPage() {
                         ))}
                     </div>
                 </motion.div>
-
-                {/* بخش نوار پیشرفت متحرک (SkillsSection) */}
-                <div className="pt-6">
-                    <SkillsSection />
-                </div>
             </div>
         </main>
     );

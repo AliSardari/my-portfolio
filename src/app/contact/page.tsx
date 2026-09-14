@@ -34,7 +34,7 @@ export default function ContactPage() {
 
     return (
         <main className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 selection:bg-cyan-500 selection:text-slate-950 transition-colors">
-            <div className="max-w-5xl mx-auto px-6 py-20">
+            <div className="max-w-5xl mx-auto px-6 pt-12 pb-16">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -168,7 +168,7 @@ export default function ContactPage() {
                 </motion.div>
 
                 {/* فوتر */}
-                <div className="mt-20 pt-8 border-t border-slate-200 dark:border-slate-900 text-center text-slate-500 text-xs">
+                <div className="mt-10 pt-6 border-t border-slate-200 dark:border-slate-900 text-center text-slate-500 text-xs">
                     <p>© {new Date().getFullYear()} - طراحی و توسعه یافته با Next.js و Tailwind CSS</p>
                 </div>
             </div>
