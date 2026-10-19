@@ -1,38 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# my-portfolio — وب‌سایت پورتفولیوی شخصی
 
-## Getting Started
+پورتفولیوی فارسی (RTL) با تجربه‌ی «کارت به کارت» در اسکرول، حالت تاریک/روشن و صفحه‌ی گواهینامه‌ها.
+ساخته‌شده با **Next.js 16** (App Router)، **React 19**، **Tailwind CSS v4** و **TypeScript**.
 
-First, run the development server:
+---
+
+## نگاه کلی
+
+- **صفحه اصلی** شامل چهار بخش است: خانه، درباره من، نمونه‌کارها، تماس با من.
+  - در دسکتاپ، اسکرول از یک کارت به کارت بعدی می‌پرد (scroll snap)؛ با کلیک روی کارت‌های هیرو یا منو هم می‌توانید بین بخش‌ها جابه‌جا شوید.
+  - در موبایل و صفحه‌های کوتاه، اسکرول به حالت طبیعی تغییر می‌کند (دسترس‌پذیری بهتر).
+- **دارک/لایت**: دکمه‌ی تم در نوار بالا؛ همراه با انیمیشن اختصاصی تعویض تم (نسخه‌ی هم‌رنگ‌شده‌ی کلیپی که فرستادید).
+- **صفحه‌ی `/certificates`**: فهرست مدارک و گواهینامه‌ها با حالت خالی.
+- همه‌ی نوشته‌های قابل‌مشاهده فارسی و راست‌به‌چپ هستند.
+
+## پیش‌نیاز و اجرا
+
+نیازمند Node.js نسخه‌ی ۲۰ به بالا (پیشنهاد: ۲۲).
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install        # نصب وابستگی‌ها
+npm run dev        # اجرای محیط توسعه → http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ساخت نسخه‌ی نهایی:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build      # بیلد پروداکشن
+npm start          # اجرای نسخه‌ی بیلدشده
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+خروجی استاتیک (برای هاست اشتراکی یا هر سروری که Node ندارد):
 
-## Learn More
+```bash
+npm run build:static   # خروجی در پوشه‌ی out/ ساخته می‌شود
+```
 
-To learn more about Next.js, take a look at the following resources:
+## ساختار پروژه
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/
+  app/
+    layout.tsx           # قالب اصلی، فونت‌ها، متادیتا، RTL
+    page.tsx             # صفحه اصلی (عرشه‌ی کارت‌ها)
+    globals.css          # توکن‌های رنگ، استایل‌ها، انیمیشن‌ها
+    certificates/page.tsx# صفحه‌ی مدارک
+    not-found.tsx        # صفحه‌ی ۴۰۴
+    icon.svg             # فاوآیکون
+  components/
+    deck.tsx             # منطق اسکرول کارت‌به‌کارت و بخش فعال
+    stage.tsx            # پس‌زمینه‌های متغیر بین بخش‌ها
+    hero-section.tsx     # بخش خانه + چهار کارت
+    about-section.tsx    # درباره من + مهارت‌ها
+    projects-section.tsx # نمونه‌کارها
+    contact-section.tsx  # تماس با من
+    contact-form.tsx     # فرم با اعتبارسنجی
+    skills.tsx           # لیست مهارت‌ها و نوارهای درصد
+    theme-toggle.tsx     # دکمه‌ی تم + انیمیشن تعویض
+    site-header.tsx      # منوی بالا
+    tech-icons.tsx       # آیکون‌های تکنولوژی‌ها (simple-icons)
+  data/
+    site.ts              # نام، ایمیل، شبکه‌های اجتماعی، منو
+    skills.ts            # مهارت‌ها و درصدها
+    projects.ts          # پروژه‌ها
+    certificates.ts      # گواهینامه‌ها
+public/
+  images/                # تصاویر سایت
+  media/                 # ویدیوهای انیمیشن تم
+  resume.pdf             # فایل رزومه (فعلاً جایگزین است)
+docs/                    # یادداشت‌های طراحی (مرجع داخلی)
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## شخصی‌سازی سریع
 
-## Deploy on Vercel
+| چه چیزی | کجا ویرایش کنم |
+| --- | --- |
+| نام، برند، ایمیل، لینکدین، گیت‌هاب، وب‌سایت | `src/data/site.ts` |
+| متن‌های هیرو (صفحه خانه) | `src/components/hero-section.tsx` |
+| متن «درباره من» | `src/components/about-section.tsx` |
+| مهارت‌ها و درصدها | `src/data/skills.ts` |
+| پروژه‌ها (عنوان، توضیح، تکنولوژی، تصویر) | `src/data/projects.ts` |
+| گواهینامه‌ها | `src/data/certificates.ts` |
+| عکس پروفایل | فایل `public/images/profile-placeholder.jpg` را با عکس خودتان (همان نام) جایگزین کنید |
+| تصاویر پروژه‌ها | در `public/images/` با نام‌های `proj-*.jpg` |
+| فایل رزومه | `public/resume.pdf` را با رزومه‌ی واقعی جایگزین کنید |
+| رنگ‌ها | `src/app/globals.css` (توکن‌های `:root` و `.dark`) |
+| فونت‌ها | `src/app/layout.tsx` (Vazirmatn و JetBrains Mono) |
+| انیمیشن تعویض تم | `public/media/` + `src/components/theme-toggle.tsx` (برای غیرفعال‌کردن: `VIDEO_FX = false`) |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+> **مهم:** این نسخه شامل چند «جایگزین» است تا همه‌چیز از ابتدا کامل کار کند:
+> مشخصات تماس، عکس پروفایل، فایل رزومه، پروژه‌ها و گواهینامه‌ها نمونه هستند؛
+> قبل از انتشار، آن‌ها را با اطلاعات واقعی خودتان عوض کنید.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## فرم تماس چطور کار می‌کند؟
 
+فرم اعتبارسنجی سمت کلاینت دارد (خطا زیر هر فیلد، با پیام دقیق) و پس از ارسال،
+**پنجره‌ی ایمیل کاربر** با متن آماده باز می‌شود (mailto). برای اتصال به بک‌اند واقعی
+(مثلاً Resend، Formspree یا API لاراول خودتان) فقط بخش `onSubmit` در
+`src/components/contact-form.tsx` را تغییر دهید.
 
+## کیفیت و دسترس‌پذیری
+
+- ریسپانسیو در سه بازه (موبایل، تبلت، دسکتاپ)؛ اسنپ کارتی فقط در دسکتاپ و با احترام به `prefers-reduced-motion`.
+- پیمایش با کیبورد، فوکوس واضح، لینک «پرش به محتوا».
+- فرم با اعتبارسنجی on-blur، پیام‌های خطا با `role="alert"` و حالت موفق.
+- کنتراست متن‌ها در هر دو تم مطابق WCAG AA؛ همه‌ی تصاویر `alt` دارند.
+
+## انتشار
+
+- **Vercel (ساده‌ترین):** مخزن را وصل کنید یا با CLI دیپلوی کنید؛ تنظیم خاصی لازم نیست.
+- **هاست اشتراکی:** `npm run build:static` و محتویات پوشه‌ی `out/` را آپلود کنید.
+- این پروژه شخصی است؛ لطفاً فقط روی سایت خودتان منتشر شود.

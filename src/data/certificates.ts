@@ -1,0 +1,217 @@
+// ------------------------------------------------------------------
+// مدارک و گواهینامه‌ها (واقعی) با تصویر
+// thumbnail: عکس کوچک برای کارت | original: عکس اصلی برای لایت‌باکس و دانلود
+// titleEn/categoryEn: نسخه‌ی انگلیسی برای حالت زبان انگلیسی
+// ------------------------------------------------------------------
+
+export type Certificate = {
+  title: string;
+  titleEn: string;
+  category: string;
+  categoryEn: string;
+  thumbnail: string;
+  original: string;
+};
+
+export const certificates: Certificate[] = [
+  {
+    title: "آموزش جامع PHP",
+    titleEn: "Comprehensive PHP Course",
+    category: "PHP",
+    categoryEn: "PHP",
+    thumbnail: "/certificates/thumbs/cert-1.png",
+    original: "/certificates/original/cert-1.png",
+  },
+  {
+    title: "آموزش پیشرفته PHP",
+    titleEn: "Advanced PHP Course",
+    category: "PHP",
+    categoryEn: "PHP",
+    thumbnail: "/certificates/thumbs/cert-2.png",
+    original: "/certificates/original/cert-2.png",
+  },
+  {
+    title: "آموزش جامع Laravel",
+    titleEn: "Comprehensive Laravel Course",
+    category: "Laravel",
+    categoryEn: "Laravel",
+    thumbnail: "/certificates/thumbs/cert-3.png",
+    original: "/certificates/original/cert-3.png",
+  },
+  {
+    title: "آموزش گرافیک تبلیغاتی پیشرفته",
+    titleEn: "Advanced Advertising Graphic Design",
+    category: "فتوشاپ",
+    categoryEn: "Photoshop",
+    thumbnail: "/certificates/thumbs/cert-4.png",
+    original: "/certificates/original/cert-4.png",
+  },
+  {
+    title: "آموزش جامع فتوشاپ",
+    titleEn: "Comprehensive Photoshop Course",
+    category: "فتوشاپ",
+    categoryEn: "Photoshop",
+    thumbnail: "/certificates/thumbs/cert-5.png",
+    original: "/certificates/original/cert-5.png",
+  },
+  {
+    title: "طراحی بنر متحرک در فتوشاپ",
+    titleEn: "Animated Banner Design in Photoshop",
+    category: "فتوشاپ",
+    categoryEn: "Photoshop",
+    thumbnail: "/certificates/thumbs/cert-6.png",
+    original: "/certificates/original/cert-6.png",
+  },
+  {
+    title: "آموزش صفر تا صد ReactJs",
+    titleEn: "React.js: Zero to Expert",
+    category: "React",
+    categoryEn: "React",
+    thumbnail: "/certificates/thumbs/cert-7.png",
+    original: "/certificates/original/cert-7.png",
+  },
+  {
+    title: "آموزش جامع Vue Js",
+    titleEn: "Comprehensive Vue.js Course",
+    category: "Vue",
+    categoryEn: "Vue",
+    thumbnail: "/certificates/thumbs/cert-8.png",
+    original: "/certificates/original/cert-8.png",
+  },
+  {
+    title: "آنالیز چهره و بینایی کامپیوتر در پایتون",
+    titleEn: "Face Analysis & Computer Vision with Python",
+    category: "پایتون",
+    categoryEn: "Python",
+    thumbnail: "/certificates/thumbs/cert-9.png",
+    original: "/certificates/original/cert-9.png",
+  },
+  {
+    title: "آموزش HTML - طراحی وب مقدماتی",
+    titleEn: "HTML – Intro to Web Design",
+    category: "وب",
+    categoryEn: "Web",
+    thumbnail: "/certificates/thumbs/cert-10.png",
+    original: "/certificates/original/cert-10.png",
+  },
+  {
+    title: "آموزش مقدماتی ReactJs",
+    titleEn: "Intro to React.js",
+    category: "React",
+    categoryEn: "React",
+    thumbnail: "/certificates/thumbs/cert-11.png",
+    original: "/certificates/original/cert-11.png",
+  },
+  {
+    title: "آموزش SEO",
+    titleEn: "SEO Fundamentals",
+    category: "SEO",
+    categoryEn: "SEO",
+    thumbnail: "/certificates/thumbs/cert-12.png",
+    original: "/certificates/original/cert-12.png",
+  },
+  {
+    title: "آموزش طراحی قالب شخصی در وردپرس",
+    titleEn: "Designing Custom WordPress Themes",
+    category: "وردپرس",
+    categoryEn: "WordPress",
+    thumbnail: "/certificates/thumbs/cert-13.png",
+    original: "/certificates/original/cert-13.png",
+  },
+  {
+    title: "آموزش فتوشاپ با هوش مصنوعی",
+    titleEn: "Photoshop with Artificial Intelligence",
+    category: "هوش مصنوعی",
+    categoryEn: "AI",
+    thumbnail: "/certificates/thumbs/cert-14.png",
+    original: "/certificates/original/cert-14.png",
+  },
+  {
+    title: "آموزش کار با لینوکس",
+    titleEn: "Linux Essentials",
+    category: "لینوکس",
+    categoryEn: "Linux",
+    thumbnail: "/certificates/thumbs/cert-15.png",
+    original: "/certificates/original/cert-15.png",
+  },
+  {
+    title: "آموزش امنیت شبکه با پایتون",
+    titleEn: "Network Security with Python",
+    category: "پایتون",
+    categoryEn: "Python",
+    thumbnail: "/certificates/thumbs/cert-16.png",
+    original: "/certificates/original/cert-16.png",
+  },
+  {
+    title: "آموزش پایتون با ۴ پروژه کاربردی",
+    titleEn: "Python with 4 Practical Projects",
+    category: "پایتون",
+    categoryEn: "Python",
+    thumbnail: "/certificates/thumbs/cert-17.png",
+    original: "/certificates/original/cert-17.png",
+  },
+  {
+    title: "آموزش اکسل",
+    titleEn: "Excel Course",
+    category: "اکسل",
+    categoryEn: "Excel",
+    thumbnail: "/certificates/thumbs/cert-18.png",
+    original: "/certificates/original/cert-18.png",
+  },
+  {
+    title: "آموزش برنامه نویسی Raspberry Pi با Python",
+    titleEn: "Programming Raspberry Pi with Python",
+    category: "پایتون",
+    categoryEn: "Python",
+    thumbnail: "/certificates/thumbs/cert-19.png",
+    original: "/certificates/original/cert-19.png",
+  },
+  {
+    title: "آموزش مقدماتی برنامه نویسی PLC با SIMATIC Manager",
+    titleEn: "PLC Programming Basics with SIMATIC Manager",
+    category: "PLC",
+    categoryEn: "PLC",
+    thumbnail: "/certificates/thumbs/cert-20.png",
+    original: "/certificates/original/cert-20.png",
+  },
+  {
+    title: "آموزش تعمیر و عیب‌یابی پاور کامپیوتر",
+    titleEn: "PC Power Supply Repair & Troubleshooting",
+    category: "کامپیوتر",
+    categoryEn: "Computer",
+    thumbnail: "/certificates/thumbs/cert-21.png",
+    original: "/certificates/original/cert-21.png",
+  },
+  {
+    title: "آموزش تعمیرات سخت‌افزار لپ‌تاپ",
+    titleEn: "Laptop Hardware Repair",
+    category: "کامپیوتر",
+    categoryEn: "Computer",
+    thumbnail: "/certificates/thumbs/cert-22.png",
+    original: "/certificates/original/cert-22.png",
+  },
+  {
+    title: "آموزش برنامه نویسی پیشرفته و شی‌گرایی در C++",
+    titleEn: "Advanced & OOP Programming in C++",
+    category: "C++",
+    categoryEn: "C++",
+    thumbnail: "/certificates/thumbs/cert-23.png",
+    original: "/certificates/original/cert-23.png",
+  },
+  {
+    title: "آموزش کلید واژگان مهم در مقاله‌نویسی",
+    titleEn: "Keywords in Academic Writing",
+    category: "مقاله‌نویسی",
+    categoryEn: "Writing",
+    thumbnail: "/certificates/thumbs/cert-24.png",
+    original: "/certificates/original/cert-24.png",
+  },
+  {
+    title: "آموزش تکنیک‌های ریدینگ آیلتس",
+    titleEn: "IELTS Reading Techniques",
+    category: "آیلتس",
+    categoryEn: "IELTS",
+    thumbnail: "/certificates/thumbs/cert-25.png",
+    original: "/certificates/original/cert-25.png",
+  },
+];
