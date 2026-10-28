@@ -140,4 +140,18 @@ export const projects: Project[] = [
     image: "/projects/demo-neon-portfolio.png",
     liveUrl: "https://neon-portfolio-henna.vercel.app/",
   },
+  {
+    slug: "tourism-website",
+    title: "طراحی فرانت‌اند وب‌سایت گردشگری",
+    titleEn: "Tourism Website Front-end",
+    type: "Front-end Design",
+    typeEn: "Front-end Design",
+    description:
+      "طراحی رابط کاربری و تجربه کاربری برای وب‌سایت گردشگری با تمرکز بر نمایش اطلاعات، مسیرهای بصری و تعاملات مدرن.",
+    descriptionEn:
+      "UI/UX design for a tourism website focusing on information display, visual flows and modern interactions.",
+    tech: ["React", "Next.js", "Tailwind CSS"],
+    image: "/projects/tourism.png",
+    liveUrl: "https://gardesh-six.vercel.app",
+  },
 ];
