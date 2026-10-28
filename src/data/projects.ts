@@ -151,7 +151,7 @@ export const projects: Project[] = [
     descriptionEn:
       "UI/UX design for a tourism website focusing on information display, visual flows and modern interactions.",
     tech: ["React", "Next.js", "Tailwind CSS"],
-    image: "/projects/tourism.png",
+    image: "/projects/tourism.jpg",
     liveUrl: "https://gardesh-six.vercel.app",
   },
 ];
